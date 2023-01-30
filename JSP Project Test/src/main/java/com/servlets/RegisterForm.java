@@ -18,7 +18,7 @@ public class RegisterForm extends HttpServlet {
 		String email = req.getParameter("user_email");
 		String password = req.getParameter("user_password");
 		String courses= req.getParameter("course");
-		resp.setContentType("html/text");
+		resp.setContentType("text/html");
 		
 		
 		PrintWriter out=resp.getWriter();
