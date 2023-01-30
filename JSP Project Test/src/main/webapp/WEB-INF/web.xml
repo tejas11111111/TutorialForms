@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="5.0">
+  <display-name>JSP Project Test</display-name>
+  
+  
+  <servlet>
+  <servlet-name>first</servlet-name>
+  <servlet-class>com.servlets.FirstProgram</servlet-class> 
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>first</servlet-name>
+  <url-pattern>/app</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>second</servlet-name>
+  <servlet-class>com.servlets.SecondProgram</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>second</servlet-name>
+  <url-pattern>/app2</url-pattern>
+  
+  </servlet-mapping>
+  
+  
+  <servlet>
+  <servlet-name>third</servlet-name>
+  <servlet-class>com.servlets.ThirdProgram</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>third</servlet-name>
+  <url-pattern>/app3</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>forth</servlet-name>
+  <servlet-class>com.servlets.HttpServletExample</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>forth</servlet-name>
+  <url-pattern>/app4</url-pattern>
+  
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>App</servlet-name>
+  <servlet-class>com.servlets.RegisterForm</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>App</servlet-name>
+  <url-pattern>/register</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+</web-app>
